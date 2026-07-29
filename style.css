@@ -1,10 +1,268 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #ff6b81, #6c63ff);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+/* GENERAL */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:linear-gradient(135deg,#ff6b81,#6c63ff);
+color:white;
+overflow-x:hidden;
+}
+
+
+/* PASSWORD SCREEN */
+
+#password-screen{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:20px;
+}
+
+.card{
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(15px);
+padding:40px;
+border-radius:25px;
+text-align:center;
+max-width:420px;
+width:100%;
+box-shadow:0 0 35px rgba(0,0,0,.35);
+animation:fadeIn 1s ease;
+}
+
+.card h1{
+font-size:38px;
+margin-bottom:15px;
+}
+
+.subtitle{
+font-size:20px;
+margin-bottom:20px;
+opacity:.9;
+}
+
+.card p{
+line-height:1.7;
+margin-bottom:20px;
+}
+
+input{
+width:100%;
+padding:16px;
+border:none;
+border-radius:15px;
+font-size:18px;
+margin-top:10px;
+margin-bottom:20px;
+outline:none;
+}
+
+button{
+background:#ff2968;
+color:white;
+border:none;
+padding:15px 30px;
+border-radius:30px;
+font-size:18px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+background:#ff0f57;
+}
+
+#error{
+margin-top:20px;
+color:#ffe4e4;
+font-weight:bold;
+}
+
+
+/* MAIN CONTENT */
+
+#main-content{
+display:none;
+padding:30px 20px;
+animation:fadeIn 1s ease;
+}
+
+
+/* HERO */
+
+.hero{
+text-align:center;
+margin-bottom:60px;
+}
+
+.hero-image{
+width:260px;
+max-width:90%;
+border-radius:25px;
+box-shadow:0 0 30px rgba(255,255,255,.35);
+margin-bottom:25px;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:15px;
+}
+
+.quote{
+font-size:22px;
+font-style:italic;
+opacity:.95;
+line-height:1.8;
+}
+
+
+/* LETTER */
+
+.letter{
+background:rgba(255,255,255,.12);
+padding:35px;
+border-radius:25px;
+max-width:900px;
+margin:0 auto 60px;
+line-height:2;
+font-size:20px;
+box-shadow:0 0 20px rgba(0,0,0,.25);
+}
+
+.letter h2{
+text-align:center;
+margin-bottom:30px;
+font-size:34px;
+}
+
+
+/* VIDEOS */
+
+.videos{
+text-align:center;
+margin-bottom:60px;
+}
+
+.videos h2{
+font-size:34px;
+margin-bottom:30px;
+}
+
+video{
+width:90%;
+max-width:700px;
+border-radius:20px;
+box-shadow:0 0 25px rgba(255,255,255,.25);
+}
+
+
+/* ENDING */
+
+.ending{
+background:rgba(255,255,255,.12);
+padding:35px;
+border-radius:25px;
+max-width:850px;
+margin:0 auto 60px;
+text-align:center;
+box-shadow:0 0 20px rgba(0,0,0,.25);
+}
+
+.ending h2{
+font-size:36px;
+margin-bottom:25px;
+}
+
+.ending p{
+font-size:22px;
+line-height:2;
+}
+
+.signature{
+margin-top:40px;
+font-size:24px;
+font-weight:bold;
+}
+
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:40px;
+font-size:22px;
+font-style:italic;
+opacity:.9;
+}
+
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.card{
+padding:30px;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+.quote{
+font-size:19px;
+}
+
+.letter{
+padding:25px;
+font-size:18px;
+}
+
+.letter h2{
+font-size:28px;
+}
+
+.videos h2{
+font-size:28px;
+}
+
+.ending{
+padding:25px;
+}
+
+.ending h2{
+font-size:30px;
+}
+
+.ending p{
+font-size:19px;
+}
+
+footer{
+font-size:18px;
+}
+
 }
